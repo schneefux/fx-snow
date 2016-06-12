@@ -1,0 +1,403 @@
+Hitachi Optimizing Linkage Editor (Ver. 7.1.03.000)23-Dec-2012 15:53:44
+
+*** Options ***
+
+-subcommand=C:\Users\Timo\AppData\Local\Temp\hmk53BA.tmp
+noprelink
+sdebug
+rom D=R
+nomessage
+list "G:\Casio SDK\Projekte\Snow\Debug\FXADDINror.map"
+show symbol
+nooptimize
+start P_TOP,P,C,D,C$VTBL,C$INIT/0300200,B_BR_Size,B,R/08100000
+fsymbol P
+nologo
+input "G:\Casio SDK\Projekte\Snow\Debug\Snow.obj" "G:\Casio SDK\Projekte\Snow\Debug\SYSCALLS.obj"
+input "G:\Casio SDK\OS\FX\lib\setup.obj"
+library "G:\Casio SDK\OS\FX\lib\fx9860G_library.lib"
+library "G:\Casio SDK\OS\FX\lib\revolution.lib"
+output "G:\Casio SDK\Projekte\Snow\Debug\FXADDINror.abs"
+-nomessage=1100
+end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+P_TOP
+                                  00300200  00300213        14   4
+P
+                                  00300214  00300f77       d64   4
+C
+                                  00300f78  00301207       290   4
+D
+                                  00301208  0030122f        28   4
+B_BR_Size
+                                  08100000  08100003         4   4
+B
+                                  08100004  08100107       104   4
+R
+                                  08100108  0810012f        28   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=P_TOP
+FILE=G:\Casio SDK\Projekte\Snow\Debug\Snow.obj
+                                  00300200  00300213        14
+  _InitializeSystem
+                                  00300200        14   func ,g         * 
+
+SECTION=P
+FILE=G:\Casio SDK\Projekte\Snow\Debug\Snow.obj
+                                  00300214  00300733       520
+  _random
+                                  00300214        20   func ,g         * 
+  _setpixel
+                                  00300234        3e   func ,g         * 
+  _drawsprite
+                                  00300272       1da   func ,g         * 
+  _display_vram
+                                  0030044c        60   func ,g         * 
+  _isMainMenu
+                                  003004ac        1e   func ,g         * 
+  _snowtimer
+                                  003004ca       162   func ,g         * 
+  _AddIn_main
+                                  0030062c       108   func ,g         * 
+FILE=G:\Casio SDK\Projekte\Snow\Debug\SYSCALLS.obj
+                                  00300734  00300a13       2e0
+  _Serial_ReadOneByte
+                                  00300734         0   none ,g         * 
+  _Serial_BufferedTransmitOneByte
+                                  00300744         0   none ,g         * 
+  _Serial_Open
+                                  00300754         0   none ,g         * 
+  _Serial_Close
+                                  00300764         0   none ,g         * 
+  _RTC_GetTicks
+                                  00300774         0   none ,g         * 
+  _KBD_PRGM_GetKey
+                                  00300784         0   none ,g         * 
+  _Disp_GetVRAMPtr
+                                  00300794         0   none ,g         * 
+  _PutDisp_DD
+                                  003007a4         0   none ,g         * 
+  _DrawLineVRAM
+                                  003007b4         0   none ,g         * 
+  _AllClr_DD
+                                  003007c4         0   none ,g         * 
+  _AllClr_VRAM
+                                  003007d4         0   none ,g         * 
+  _AllClr_DDVRAM
+                                  003007e4         0   none ,g         * 
+  _Sleep
+                                  003007f4         0   none ,g         * 
+  _GetKey
+                                  00300804         0   none ,g         * 
+  _locate
+                                  00300814         0   none ,g         * 
+  _Print
+                                  00300824         0   none ,g         * 
+  _Timer_Install
+                                  00300834         0   none ,g         * 
+  _Timer_Uninstall
+                                  00300844         0   none ,g         * 
+  _Timer_Start
+                                  00300854         0   none ,g         * 
+  _itoa
+                                  00300864         0   none ,g         * 
+  _EditExpression
+                                  00300874         0   none ,g         * 
+  _Reboot
+                                  00300884         0   none ,g         * 
+  _RTC_SetDateTime
+                                  00300894         0   none ,g         * 
+  _RTC_Reset
+                                  003008a4         0   none ,g         * 
+  _RTC_GetTime
+                                  003008b4         0   none ,g         * 
+  _PowerOff
+                                  003008c4         0   none ,g         * 
+  _Serial_WriteByte
+                                  003008d4         0   none ,g         * 
+  _PutKey
+                                  003008e4         0   none ,g         * 
+  _ShapeToDD
+                                  003008f4         0   none ,g         * 
+  _InputString
+                                  00300904         0   none ,g         * 
+  _App_CONICS
+                                  00300914         0   none ,g         * 
+  _App_DYNA
+                                  00300924         0   none ,g         * 
+  _App_EQUA
+                                  00300934         0   none ,g         * 
+  _App_PROG
+                                  00300944         0   none ,g         * 
+  _App_FINANCE
+                                  00300954         0   none ,g         * 
+  _App_GRAPH_TABLE
+                                  00300964         0   none ,g         * 
+  _App_LINK
+                                  00300974         0   none ,g         * 
+  _App_MEMORY
+                                  00300984         0   none ,g         * 
+  _App_RECUR
+                                  00300994         0   none ,g         * 
+  _App_RUN_MAT
+                                  003009a4         0   none ,g         * 
+  _App_RUN_STAT
+                                  003009b4         0   none ,g         * 
+  _App_SYSTEM
+                                  003009c4         0   none ,g         * 
+  _InputDateDialog
+                                  003009d4         0   none ,g         * 
+  _BCD_SetAsInt
+                                  003009e4         0   none ,g         * 
+  _GlibGetOSVersionInfo
+                                  003009f4         0   none ,g         * 
+  _LongToAsc
+                                  00300a04         0   none ,g         * 
+FILE=G:\Casio SDK\OS\FX\lib\setup.obj
+                                  00300a14  00300b2f       11c
+  ___LINK_PROTECT
+                                  00300a14         4   func ,g         * 
+  _SetQuitHandler
+                                  00300a18         6   func ,g         * 
+  _OnAppCloseDefault
+                                  00300a1e        54   func ,g         * 
+  __INITSCT_ADDIN
+                                  00300a72        48   func ,g         * 
+  _INIT_ADDIN_APPLICATION
+                                  00300aba        76   func ,g         * 
+FILE=__modlu
+                                  00300b30  00300be7        b8
+  __modlu
+                                  00300b30         0   none ,g         * 
+  modlu_L
+                                  00300bc8         0   none ,l         * 
+  modlu_zero
+                                  00300bd0         0   none ,l         * 
+  A_errno
+                                  00300be0         0   none ,l         * 
+  n_zerono
+                                  00300be4         0   none ,l         * 
+FILE=__s_mvn
+                                  00300be8  00300c1f        38
+  __slow_mvn
+                                  00300be8         0   none ,g         * 
+  SMVN_B
+                                  00300bf6         0   none ,l         * 
+  SMVN_END
+                                  00300c18         0   none ,l         * 
+FILE=rand
+                                  00300c20  00300c4b        2c
+  _rand
+                                  00300c20        2c   func ,g         * 
+FILE=_Bdel_cychdr
+                                  00300c4c  00300c5b        10
+  _Bdel_cychdr
+                                  00300c4c         0   none ,g         * 
+FILE=_BfileFLS_CloseFile
+                                  00300c5c  00300c6b        10
+  _BfileFLS_CloseFile
+                                  00300c5c         0   none ,g         * 
+FILE=_Bkey_Set_RepeatTime_Default
+                                  00300c6c  00300c7b        10
+  _Bkey_Set_RepeatTime_Default
+                                  00300c6c         0   none ,g         * 
+FILE=_CallbackAtQuitMainFunction
+                                  00300c7c  00300c8b        10
+  _CallbackAtQuitMainFunction
+                                  00300c7c         0   none ,g         * 
+FILE=_flsFindClose
+                                  00300c8c  00300c9b        10
+  _flsFindClose
+                                  00300c8c         0   none ,g         * 
+FILE=_GLibAddinAplExecutionCheck
+                                  00300c9c  00300cab        10
+  _GLibAddinAplExecutionCheck
+                                  00300c9c         0   none ,g         * 
+FILE=_Hmem_SetMMU
+                                  00300cac  00300cbb        10
+  _Hmem_SetMMU
+                                  00300cac         0   none ,g         * 
+FILE=timer
+                                  00300cbc  00300dbb       100
+  _GetSDKLibraryVersion
+                                  00300cbc         6   func ,g         * 
+  _SetTimer
+                                  00300cc2        54   func ,g         * 
+  _KillTimer
+                                  00300d16        44   func ,g         * 
+  _Sleep
+                                  00300d5a        62   func ,l         * 
+FILE=__divls
+                                  00300dbc  00300e6f        b4
+  __divls
+                                  00300dbc         0   none ,g         * 
+  divls_zero
+                                  00300e5a         0   none ,l         * 
+  A_errno
+                                  00300e68         0   none ,l         * 
+  n_zerono
+                                  00300e6c         0   none ,l         * 
+FILE=__modls
+                                  00300e70  00300f37        c8
+  __modls
+                                  00300e70         0   none ,g         * 
+  modls_L
+                                  00300f16         0   none ,l         * 
+  modls_zero
+                                  00300f22         0   none ,l         * 
+  A_errno
+                                  00300f30         0   none ,l         * 
+  n_zerono
+                                  00300f34         0   none ,l         * 
+FILE=_Bcre_cychdr
+                                  00300f38  00300f47        10
+  _Bcre_cychdr
+                                  00300f38         0   none ,g         * 
+FILE=_BSrl_DummyWAIT
+                                  00300f48  00300f57        10
+  _BSrl_DummyWAIT
+                                  00300f48         0   none ,g         * 
+FILE=_Bsta_cychdr
+                                  00300f58  00300f67        10
+  _Bsta_cychdr
+                                  00300f58         0   none ,g         * 
+FILE=_Bstp_cychdr
+                                  00300f68  00300f77        10
+  _Bstp_cychdr
+                                  00300f68         0   none ,g         * 
+
+SECTION=C
+FILE=G:\Casio SDK\Projekte\Snow\Debug\Snow.obj
+                                  00300f78  003011f1       27a
+  _SysCallWrapper
+                                  00300f78         c   data ,g         * 
+  _sprite3
+                                  00300f84        24   data ,g         * 
+  _sprite4
+                                  00300fa8        40   data ,g         * 
+  _sprite5
+                                  00300fe8        64   data ,g         * 
+  _sprite6
+                                  0030104c        90   data ,g         * 
+  _sprite7
+                                  003010dc        c4   data ,g         * 
+FILE=addin_sct
+                                  003011f4  00301207        14
+  _B_BGN
+                                  003011f4         0   none ,g         * 
+  _B_END
+                                  003011f8         0   none ,g         * 
+  _R_BGN
+                                  003011fc         0   none ,g         * 
+  _R_END
+                                  00301200         0   none ,g         * 
+  _D_ROM
+                                  00301204         0   none ,g         * 
+
+SECTION=B_BR_Size
+FILE=G:\Casio SDK\Projekte\Snow\Debug\Snow.obj
+                                  08100000  08100003         4
+  _BR_Size
+                                  08100000         4   data ,g         * 
+
+SECTION=B
+FILE=G:\Casio SDK\Projekte\Snow\Debug\Snow.obj
+                                  08100004  08100101        fe
+  _vram
+                                  08100004         4   data ,g         * 
+  _snow
+                                  08100008        fa   data ,g         * 
+FILE=_errno
+                                  08100104  08100107         4
+  __errno
+                                  08100104         4   data ,g         * 
+
+SECTION=R
+FILE=G:\Casio SDK\Projekte\Snow\Debug\Snow.obj
+                                  08100108  08100127        20
+  _iSysCallFuncPtr
+                                  08100108         4   data ,g         * 
+  _lastrandom
+                                  0810010c         4   data ,l         * 
+  _variable
+                                  08100110        18   data ,g         * 
+FILE=G:\Casio SDK\OS\FX\lib\setup.obj
+                                  08100128  0810012b         4
+  _gb_OnAppClose
+                                  08100128         4   data ,g         * 
+FILE=_rnext
+                                  0810012c  0810012f         4
+  __rnext
+                                  0810012c         4   data ,g         * 
+
+Absolute value symbols
+FILE=__modlu
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=_Bdel_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BfileFLS_CloseFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bkey_Set_RepeatTime_Default
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_CallbackAtQuitMainFunction
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_flsFindClose
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_GLibAddinAplExecutionCheck
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Hmem_SetMMU
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=__divls
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=__modls
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=_Bcre_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BSrl_DummyWAIT
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bsta_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bstp_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Accessible with Abs8 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Variable Accessible with Abs16 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Function Call ***
+
+SYMBOL                              COUNTS  OPTIMIZE

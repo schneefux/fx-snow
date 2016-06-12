@@ -1,0 +1,12 @@
+//------------------------------------------------------------------
+// Addin-Application header control file, created with the CASIO SDK
+//------------------------------------------------------------------
+[OUTPUT]     : "SNOW.G1A"
+[BINDATA]    : "FXADDINror.bin"
+[DISPNAME]   : "Snow"
+[APPNAME]    : "@SNOW"
+[VERSION]    : "01.00.0000"
+[APL_ICON]   : "MainIcon.bmp"
+[MODULE_NUM] : 0
+[MOD1_TITLE] : "Snow"
+[MOD1_ICON]  : "eActivityIcon.bmp"

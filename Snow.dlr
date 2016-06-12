@@ -1,0 +1,13 @@
+[DLSimRunSpace]
+
+[Breakpoint]
+File=G:\Casio SDK\Projekte\Snow\Snow.c
+Line=303
+Flags=00001012
+Sublevel=1
+
+[Breakpoint]
+File=G:\Casio SDK\Projekte\Snow\Snow.c
+Line=303
+Flags=00001012
+Sublevel=2
